@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SVGWebView",
+        "repositoryURL": "https://github.com/ZeeZide/SVGWebView.git",
+        "state": {
+          "branch": null,
+          "revision": "4f7d0fabcc0c89c5f770b8ffa1e36550e3cb7fe9",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

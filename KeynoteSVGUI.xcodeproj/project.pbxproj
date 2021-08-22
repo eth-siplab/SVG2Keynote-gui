@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		459A279123AA910B003D50EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A279023AA910B003D50EC /* AppDelegate.swift */; };
+		459A279323AA910B003D50EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A279223AA910B003D50EC /* ContentView.swift */; };
+		459A279523AA910B003D50EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459A279423AA910B003D50EC /* Assets.xcassets */; };
+		459A279823AA910B003D50EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459A279723AA910B003D50EC /* Preview Assets.xcassets */; };
+		459A279B23AA910B003D50EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459A279923AA910B003D50EC /* Main.storyboard */; };
+		AB4A692426A45A5A00B3EF9A /* SVGWebView in Frameworks */ = {isa = PBXBuildFile; productRef = AB4A692326A45A5A00B3EF9A /* SVGWebView */; };
+		AB4A692626A4678500B3EF9A /* svgToKeyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A692526A4678500B3EF9A /* svgToKeyRepository.swift */; };
+		AB5D812626C1458F0010D073 /* libkeynote_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5D812526C1458F0010D073 /* libkeynote_lib.a */; };
+		AB5D812A26C9603C0010D073 /* libsnappy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5D812926C9603C0010D073 /* libsnappy.a */; };
+		AB5D813026C97D9F0010D073 /* wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5D812E26C97D9F0010D073 /* wrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		459A278D23AA910B003D50EC /* KeynoteSVGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeynoteSVGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		459A279023AA910B003D50EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		459A279223AA910B003D50EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		459A279423AA910B003D50EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		459A279723AA910B003D50EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		459A279A23AA910B003D50EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		459A279C23AA910B003D50EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB4A692526A4678500B3EF9A /* svgToKeyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = svgToKeyRepository.swift; sourceTree = "<group>"; };
+		AB5D812526C1458F0010D073 /* libkeynote_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libkeynote_lib.a; sourceTree = "<group>"; };
+		AB5D812926C9603C0010D073 /* libsnappy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsnappy.a; sourceTree = "<group>"; };
+		AB5D812E26C97D9F0010D073 /* wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wrapper.mm; sourceTree = "<group>"; };
+		AB5D812F26C97D9F0010D073 /* wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrapper.h; sourceTree = "<group>"; };
+		AB8978B326A4239F003D201E /* KeynoteSVGUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeynoteSVGUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB8978BF26A436A7003D201E /* keynote.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = keynote.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		459A278A23AA910B003D50EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB5D812A26C9603C0010D073 /* libsnappy.a in Frameworks */,
+				AB5D812626C1458F0010D073 /* libkeynote_lib.a in Frameworks */,
+				AB4A692426A45A5A00B3EF9A /* SVGWebView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		459A278423AA910A003D50EC = {
+			isa = PBXGroup;
+			children = (
+				459A278F23AA910B003D50EC /* KeynoteSVGUI */,
+				459A278E23AA910B003D50EC /* Products */,
+				AB8978BB26A42A26003D201E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		459A278E23AA910B003D50EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				459A278D23AA910B003D50EC /* KeynoteSVGUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		459A278F23AA910B003D50EC /* KeynoteSVGUI */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D812F26C97D9F0010D073 /* wrapper.h */,
+				AB5D812E26C97D9F0010D073 /* wrapper.mm */,
+				AB8978BF26A436A7003D201E /* keynote.hpp */,
+				459A279023AA910B003D50EC /* AppDelegate.swift */,
+				459A279223AA910B003D50EC /* ContentView.swift */,
+				459A279423AA910B003D50EC /* Assets.xcassets */,
+				459A279923AA910B003D50EC /* Main.storyboard */,
+				459A279C23AA910B003D50EC /* Info.plist */,
+				459A279623AA910B003D50EC /* Preview Content */,
+				AB8978B326A4239F003D201E /* KeynoteSVGUI-Bridging-Header.h */,
+				AB4A692526A4678500B3EF9A /* svgToKeyRepository.swift */,
+			);
+			path = KeynoteSVGUI;
+			sourceTree = "<group>";
+		};
+		459A279623AA910B003D50EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				459A279723AA910B003D50EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB8978BB26A42A26003D201E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D812926C9603C0010D073 /* libsnappy.a */,
+				AB5D812526C1458F0010D073 /* libkeynote_lib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		459A278C23AA910B003D50EC /* KeynoteSVGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459A27A023AA910B003D50EC /* Build configuration list for PBXNativeTarget "KeynoteSVGUI" */;
+			buildPhases = (
+				459A278923AA910B003D50EC /* Sources */,
+				459A278A23AA910B003D50EC /* Frameworks */,
+				459A278B23AA910B003D50EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeynoteSVGUI;
+			packageProductDependencies = (
+				AB4A692326A45A5A00B3EF9A /* SVGWebView */,
+			);
+			productName = SwiftUIMenuBar;
+			productReference = 459A278D23AA910B003D50EC /* KeynoteSVGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		459A278523AA910A003D50EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "Jonathan Lampérth";
+				TargetAttributes = {
+					459A278C23AA910B003D50EC = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 459A278823AA910A003D50EC /* Build configuration list for PBXProject "KeynoteSVGUI" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 459A278423AA910A003D50EC;
+			packageReferences = (
+				AB4A692226A45A5A00B3EF9A /* XCRemoteSwiftPackageReference "SVGWebView" */,
+			);
+			productRefGroup = 459A278E23AA910B003D50EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				459A278C23AA910B003D50EC /* KeynoteSVGUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		459A278B23AA910B003D50EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459A279B23AA910B003D50EC /* Main.storyboard in Resources */,
+				459A279823AA910B003D50EC /* Preview Assets.xcassets in Resources */,
+				459A279523AA910B003D50EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		459A278923AA910B003D50EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459A279323AA910B003D50EC /* ContentView.swift in Sources */,
+				459A279123AA910B003D50EC /* AppDelegate.swift in Sources */,
+				AB4A692626A4678500B3EF9A /* svgToKeyRepository.swift in Sources */,
+				AB5D813026C97D9F0010D073 /* wrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		459A279923AA910B003D50EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				459A279A23AA910B003D50EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		459A279E23AA910B003D50EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		459A279F23AA910B003D50EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		459A27A123AA910B003D50EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KeynoteSVGUI/SwiftUIMenuBar.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"KeynoteSVGUI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KeynoteSVGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_LDFLAGS = "-lprotobuf";
+				PRODUCT_BUNDLE_IDENTIFIER = jonath4n.KeynoteSVGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KeynoteSVGUI/KeynoteSVGUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		459A27A223AA910B003D50EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KeynoteSVGUI/SwiftUIMenuBar.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"KeynoteSVGUI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KeynoteSVGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lprotobuf";
+				PRODUCT_BUNDLE_IDENTIFIER = jonath4n.KeynoteSVGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KeynoteSVGUI/KeynoteSVGUI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		459A278823AA910A003D50EC /* Build configuration list for PBXProject "KeynoteSVGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459A279E23AA910B003D50EC /* Debug */,
+				459A279F23AA910B003D50EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459A27A023AA910B003D50EC /* Build configuration list for PBXNativeTarget "KeynoteSVGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459A27A123AA910B003D50EC /* Debug */,
+				459A27A223AA910B003D50EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB4A692226A45A5A00B3EF9A /* XCRemoteSwiftPackageReference "SVGWebView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZeeZide/SVGWebView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB4A692326A45A5A00B3EF9A /* SVGWebView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB4A692226A45A5A00B3EF9A /* XCRemoteSwiftPackageReference "SVGWebView" */;
+			productName = SVGWebView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 459A278523AA910A003D50EC /* Project object */;
+}
