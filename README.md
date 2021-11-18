@@ -1,8 +1,19 @@
-# KeynoteSVGUI Documentation
+# Repository for SVG2Keynote GUI
+
+[Jonathan Lamperth](https://www.linkedin.com/in/jonathan-lamperth-7059b418a) and [Christian Holz](https://www.christianholz.net)<br/>
+[Sensing, Interaction & Perception Lab](https://siplab.org) <br/>
+Department of Computer Science, ETH Zürich
+
+This is the repository for the software project SVG2Keynote, a macOS tool to convert Scalable Vector Graphics to Apple Keynote documents. SVG2Keynote preserves shape information (path styles, fills), such that shapes can be edited in Keynote.
+
+[SVG2Keynote project page](https://siplab.org/releases/SVG2Keynote)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+For .key file format handling, SVG2Keynote GUI uses our library [SVG2Keynote lib](https://github.com/eth-siplab/SVG2Keynote-lib).
+
 
 # Demo
-
-
 
 https://user-images.githubusercontent.com/56671993/132128636-555d457e-9113-4fcb-b430-506e5e4449ff.mov
 
